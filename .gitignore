@@ -83,7 +83,6 @@ phpunit
 # Composer
 #-------------------------
 vendor/
-!/public/assets/vendor
 
 #-------------------------
 # IDE / Development Files
@@ -124,3 +123,6 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 /.phpunit.*.cache
+
+!/public/assets/vendor
+!/public/assets/vendor/jquery/dist
