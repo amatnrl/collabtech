@@ -1,0 +1,646 @@
+::selection {
+  background-color: #1f4690;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1f4690;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: #dddddd;
+}
+.bg-header {
+  background-color: #1f4690;
+}
+
+.icon i {
+  font-size: 12px;
+}
+
+.bg-profil {
+  background-color: #f9f6f6 !important;
+}
+
+.bg-card-profil {
+  width: 100%;
+}
+.avatar {
+  border: 5px solid white;
+}
+.text-form {
+  color: #002060;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.profil {
+  margin-top: -80px;
+}
+
+#message {
+  display: none;
+  color: #000;
+  position: relative;
+  padding-left: 20px;
+  margin-top: -5px;
+}
+
+.message {
+  margin-top: -15px;
+}
+
+#message p {
+  font-size: 11px;
+  line-height: 2px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "✖";
+}
+
+.sidebar-nav .active {
+  background-color: #1f4690;
+  border-radius: 5px;
+}
+
+.active i {
+  color: white !important;
+}
+
+.active a {
+  color: white !important;
+}
+
+.card-dashboard {
+  padding: 20px;
+  border-top: 5px solid #002060;
+  width: 19.1%;
+  box-shadow: 3px 3px #888888b8;
+}
+
+.card-dashboard span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #002060;
+}
+
+.modal-header {
+  border-bottom: 3px solid #002060;
+}
+
+.f-filter {
+  width: 150px;
+}
+
+.input-filter {
+  border-radius: 20px;
+  background-color: #c8ddf5;
+  color: #002060;
+  padding-left: 15px;
+}
+
+.btn-reset {
+  border-radius: 20px;
+  background-color: #b9bec9;
+  color: white;
+  width: 100px;
+}
+
+.btn-submit {
+  border-radius: 20px;
+  background-color: #002060;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-logout {
+  border-radius: 20px;
+  background-color: #eb1d36;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-update-profil {
+  position: absolute;
+  display: flex;
+  right: 7px;
+  top: 3px;
+  color: #002060;
+  font-size: 28px;
+}
+
+.dataTables_wrapper {
+  font-family: tahoma;
+  font-size: 10px;
+  position: relative;
+  clear: both;
+  *zoom: 1;
+  zoom: 1;
+}
+
+.card-tabel {
+  border-top: 5px solid #002060;
+}
+
+/* Pembagian Tiket */
+.card-filter {
+  padding: 10px;
+  border-top: 5px solid #002060;
+}
+
+.card-progres {
+  padding: 10px;
+  border-top: 5px solid #002060;
+}
+
+.card-progres table {
+  font-size: 12px;
+}
+
+/* range per jam 14% */
+.tiket_gangguan {
+  background-color: #a0788e;
+  transition: 0.5s;
+}
+.tiket_gangguan:hover {
+  background-color: #a85a85;
+  transition: 0.5s;
+}
+.underspec {
+  background-color: #319da0;
+  transition: 0.5s;
+}
+.underspec:hover {
+  background-color: #037b7f;
+  transition: 0.5s;
+}
+.infracare {
+  background-color: #5372e7;
+  transition: 0.5s;
+}
+.infracare:hover {
+  background-color: #3556cf;
+  transition: 0.5s;
+}
+.gamas {
+  background-color: #ff9f24;
+  transition: 0.5s;
+}
+.gamas:hover {
+  background-color: #d67f0c;
+  transition: 0.5s;
+}
+.valins {
+  background-color: #59ce8f;
+  transition: 0.5s;
+}
+.valins:hover {
+  background-color: #29b56a;
+  transition: 0.5s;
+}
+.sqm {
+  background-color: #d61c4e;
+  transition: 0.5s;
+}
+.sqm:hover {
+  background-color: #ae0834;
+  transition: 0.5s;
+}
+.perambasan {
+  background-color: #42855b;
+  transition: 0.5s;
+}
+.perambasan:hover {
+  background-color: #1d723c;
+  transition: 0.5s;
+}
+.peregelan {
+  background-color: #54bab9;
+  transition: 0.5s;
+}
+.peregelan:hover {
+  background-color: #309d9b;
+  transition: 0.5s;
+}
+.pengawasan {
+  background-color: #607eaa;
+  transition: 0.5s;
+}
+.pengawasan:hover {
+  background-color: #426598;
+  transition: 0.5s;
+}
+.perapihan_dropcore {
+  background-color: #76549a;
+  transition: 0.5s;
+}
+.perapihan_dropcore:hover {
+  background-color: #633e8b;
+  transition: 0.5s;
+}
+
+.pekerjaan {
+  width: 100%;
+  height: 30px;
+  color: white;
+  padding-top: 6px;
+  /* border-radius: 2px; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.jam_8 {
+  margin-left: 4%;
+}
+
+.jam_8_30 {
+  margin-left: 8%;
+}
+
+.jam_9 {
+  margin-left: 11.5%;
+}
+
+.jam_9_30 {
+  margin-left: 15.5%;
+}
+
+.jam_10 {
+  margin-left: 19%;
+}
+
+.jam_10_30 {
+  margin-left: 23%;
+}
+
+.jam_11 {
+  margin-left: 27%;
+}
+
+.jam_11_30 {
+  margin-left: 31%;
+}
+
+.jam_12 {
+  margin-left: 34.5%;
+}
+
+.jam_12_30 {
+  margin-left: 39%;
+}
+
+.jam_13 {
+  margin-left: 42%;
+}
+
+.jam_13_30 {
+  margin-left: 47%;
+}
+
+.jam_14 {
+  margin-left: 50%;
+}
+
+.jam_14_30 {
+  margin-left: 54%;
+}
+
+.jam_15 {
+  margin-left: 58%;
+}
+
+.jam_15_30 {
+  margin-left: 62%;
+}
+
+.jam_16 {
+  margin-left: 65.5%;
+}
+
+.jam_16_30 {
+  margin-left: 69.5%;
+}
+
+.jam_17 {
+  margin-left: 73%;
+}
+
+.jam_17_30 {
+  margin-left: 77%;
+}
+
+.jam_18 {
+  margin-left: 81%;
+}
+
+.jam_18_30 {
+  margin-left: 85%;
+}
+
+.jam_19 {
+  margin-left: 88%;
+}
+
+.jam_19_30 {
+  margin-left: 92%;
+}
+
+.range_30 {
+  width: 4%;
+}
+
+.range_1 {
+  width: 7.5%;
+}
+
+.range_1_30 {
+  width: 11%;
+}
+
+.range_2 {
+  width: 15%;
+}
+
+.range_2_30 {
+  width: 18.5%;
+}
+
+.range_3 {
+  width: 23%;
+}
+
+.range_3_30 {
+  width: 26%;
+}
+
+.range_4 {
+  width: 31%;
+}
+
+.range_4_30 {
+  width: 34%;
+}
+
+.range_5 {
+  width: 38%;
+}
+
+.range_5_30 {
+  width: 41.5%;
+}
+
+.range_6 {
+  width: 46%;
+}
+
+.range_6_30 {
+  width: 49.5%;
+}
+
+.range_7 {
+  width: 54%;
+}
+
+.range_7_30 {
+  width: 57.5%;
+}
+
+.range_8 {
+  width: 62%;
+}
+
+.range_8_30 {
+  width: 65.5%;
+}
+
+.range_9 {
+  width: 70%;
+}
+
+.range_9_30 {
+  width: 73.5%;
+}
+
+.range_10 {
+  width: 78%;
+}
+
+.range_10_30 {
+  width: 81.5%;
+}
+
+.range_11 {
+  width: 86%;
+}
+
+.range_11_30 {
+  width: 89.5%;
+}
+
+.range_12 {
+  width: 93%;
+}
+
+/* Lewat */
+.lewat {
+  background-color: grey;
+  height: 30px;
+  cursor: pointer;
+  margin-top: -30px;
+  position: static;
+  /* border-radius: 0px 2px 2px 0px; */
+}
+
+.title_progres {
+  font-size: 90%;
+}
+
+.no_progres {
+  background-color: #1f4690;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  padding: 1px;
+  margin-left: 25%;
+  margin-top: 40%;
+}
+
+.btn-update-progres {
+  color: white;
+  float: right;
+  margin-right: -15px;
+  margin-top: -6px;
+}
+
+.btn-delete-progres {
+  color: #eb1d36;
+  float: right;
+  margin-top: -6px;
+}
+
+.input-search {
+  border-radius: 20px;
+  border: 1px solid #002060;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #b9bec9;
+}
+
+.form-input-text {
+  color: #002060;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.search-tiket input {
+  padding-left: 30px;
+}
+
+.search-tiket span {
+  display: flex;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.table-progres {
+  font-size: 14px;
+}
+
+.btn-assign {
+  border-radius: 20px;
+  background-color: #c8ddf5;
+  color: #002060;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* PROGRES */
+#employer-post-new-job .res-steps-container .res-steps {
+  width: 9%;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+
+#employer-post-new-job .res-steps-container .res-steps .res-step-bar {
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  border-radius: 10% !important;
+  background: #1f4690;
+  display: inline-block;
+  height: 25px;
+  width: 40px;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+  font-size: 10px;
+}
+
+#employer-post-new-job .res-steps-container .res-steps .res-progress-title {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+  display: block;
+}
+
+#employer-post-new-job .res-steps-container .res-steps .res-progress-bar {
+  height: 5px;
+  background: #1f4690;
+  width: 10%;
+  margin: -15px 0 0 50%;
+  float: left;
+}
+
+#employer-post-new-job .res-steps-container .res-step-1 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-2 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-3 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-4 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-5 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-6 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-7 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-8 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-9 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-10 .res-progress-bar,
+#employer-post-new-job .res-steps-container .res-step-11 .res-progress-bar {
+  width: 100%;
+  margin-left: 0%;
+}
+
+#employer-post-new-job .res-steps-container .res-step-four .res-progress-bar {
+  width: 50%;
+  margin-right: 50%;
+}
+
+#employer-post-new-job .res-step-form {
+  /* border: 1px solid #d2d2d2;
+  box-shadow: 0px 6px 4px -2px silver; */
+  position: absolute;
+}
+
+#employer-post-new-job .res-step-form h3 {
+  margin: 10px 0;
+  color: #1f4690;
+  font-size: 18px;
+}
+
+#employer-post-new-job .res-step-form .form-horizontal label {
+  font-weight: normal;
+}
+
+#employer-post-new-job .res-form-2,
+#employer-post-new-job .res-form-3,
+#employer-post-new-job .res-form-4,
+#employer-post-new-job .res-form-5,
+#employer-post-new-job .res-form-6,
+#employer-post-new-job .res-form-7,
+#employer-post-new-job .res-form-8,
+#employer-post-new-job .res-form-9,
+#employer-post-new-job .res-form-10,
+#employer-post-new-job .res-form-11 {
+  left: 150%;
+}
+
+#employer-post-new-job .active .res-step-bar {
+  background: #f19b20 !important;
+}
+
+#employer-post-new-job .active .res-progress-title {
+  color: #1f4690;
+}
+/* END PROGRES */
+
+/* Produktivitas */
+.produktivitas table {
+  font-size: 11px;
+}
