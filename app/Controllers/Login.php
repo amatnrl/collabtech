@@ -2,17 +2,17 @@
 
 namespace App\Controllers;
 
-use App\Models\jabatanModel;
+use App\Models\JabatanModel;
 use App\Models\UserModel;
 
 class Login extends BaseController
 {
-   protected $jabatanModel;
+   protected $JabatanModel;
    protected $userModel;
 
    public function __construct()
    {
-      $this->jabatanModel = new jabatanModel();
+      $this->JabatanModel = new JabatanModel();
       $this->UserModel = new UserModel();
    }
 
@@ -22,7 +22,7 @@ class Login extends BaseController
       $data = [
          'linklogin' => 'active',
          'title' => 'Login',
-         'jabatan' => $this->jabatanModel->getJabatan()
+         'jabatan' => $this->JabatanModel->getJabatan()
       ];
       echo view('login', $data);
    }
@@ -47,7 +47,7 @@ class Login extends BaseController
             } else if (empty($dataUserPassword)) {
                $err = "Password anda salah!";
             } else if (empty($dataUserJabatan)) {
-               $tampilkanjabatan = $this->jabatanModel->FilterJabatan($jabatan);
+               $tampilkanjabatan = $this->JabatanModel->FilterJabatan($jabatan);
                $err = "Anda tidak memiliki akses sebagai " . $tampilkanjabatan[0]['jabatan'] . "!";
             }
          }

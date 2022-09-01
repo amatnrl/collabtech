@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AbsensiModel;
-use App\Models\jabatanModel;
+use App\Models\JabatanModel;
 use App\Models\TiketGangguanModel;
 use App\Models\UserModel;
 use App\Models\WitelModel;
@@ -13,14 +13,14 @@ class PembagianTiket extends BaseController
    protected $TiketGangguanModel;
    protected $witelModel;
    protected $userModel;
-   protected $jabatanModel;
+   protected $JabatanModel;
    protected $absensiModel;
 
    public function __construct()
    {
       $this->TiketGangguanModel = new TiketGangguanModel();
       $this->witelModel = new WitelModel();
-      $this->jabatanModel = new jabatanModel();
+      $this->JabatanModel = new JabatanModel();
       $this->userModel = new UserModel();
       $this->absensiModel = new AbsensiModel();
    }
@@ -34,7 +34,7 @@ class PembagianTiket extends BaseController
       $data = [
          'linkpembagiantiket' => 'active',
          'title' => 'Pembagian Tiket',
-         'jabatan' => $this->jabatanModel->getJabatan(),
+         'jabatan' => $this->JabatanModel->getJabatan(),
          'witel' => $this->witelModel->getWitel(),
          'datauser' => $datauser,
          'absensi' => $this->absensiModel->getTeknisi($id_witel)

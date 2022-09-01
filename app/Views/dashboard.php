@@ -13,7 +13,7 @@
          <div class="card m-1 card-dashboard text-center">
             <h5>Tiket Closed</h5>
             <span>0</span>
-         </div>aaa
+         </div>
 
          <div class="card m-1 card-dashboard text-center">
             <h5>Tiket Open</h5>

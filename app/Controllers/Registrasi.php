@@ -2,20 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Models\jabatanModel;
+use App\Models\JabatanModel;
 use App\Models\UserModel;
 use App\Models\WitelModel;
 
 class Registrasi extends BaseController
 {
    protected $UserModel;
-   protected $jabatanModel;
+   protected $JabatanModel;
    protected $witelModel;
 
    public function __construct()
    {
       $this->UserModel = new UserModel();
-      $this->jabatanModel = new jabatanModel();
+      $this->JabatanModel = new JabatanModel();
       $this->witelModel = new WitelModel();
    }
 
@@ -24,7 +24,7 @@ class Registrasi extends BaseController
       $data = [
          'linklogin' => 'active',
          'title' => 'Registrasi',
-         'jabatan' => $this->jabatanModel->getJabatan(),
+         'jabatan' => $this->JabatanModel->getJabatan(),
          'witel' => $this->witelModel->getWitel()
       ];
       echo view('registrasi', $data);

@@ -3,21 +3,21 @@
 namespace App\Controllers;
 
 use App\Models\AbsensiModel;
-use App\Models\jabatanModel;
+use App\Models\JabatanModel;
 use App\Models\UserModel;
 use App\Models\WitelModel;
 
 class DatabaseTerkini extends BaseController
 {
    protected $witelModel;
-   protected $jabatanModel;
+   protected $JabatanModel;
    protected $userModel;
    protected $absensiModel;
 
    public function __construct()
    {
       $this->witelModel = new WitelModel();
-      $this->jabatanModel = new jabatanModel();
+      $this->JabatanModel = new JabatanModel();
       $this->userModel = new UserModel();
       $this->absensiModel = new AbsensiModel();
    }
@@ -31,7 +31,7 @@ class DatabaseTerkini extends BaseController
       $data = [
          'linkdatabaseterkini' => 'active',
          'title' => 'Database Terkini',
-         'jabatan' => $this->jabatanModel->getJabatan(),
+         'jabatan' => $this->JabatanModel->getJabatan(),
          'witel' => $this->witelModel->getWitel(),
          'datauser' => $this->userModel->FilterIdUser($id_user),
          'absensi' => $this->absensiModel->getTeknisi($id_witel)

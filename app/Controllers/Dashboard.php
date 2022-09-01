@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AbsensiModel;
-use App\Models\jabatanModel;
+use App\Models\JabatanModel;
 use App\Models\UserModel;
 use App\Models\WitelModel;
 
@@ -11,12 +11,12 @@ class Dashboard extends BaseController
 {
    protected $witelModel;
    protected $userModel;
-   protected $jabatanModel;
+   protected $JabatanModel;
    protected $absensiModel;
 
    public function __construct()
    {
-      $this->jabatanModel = new jabatanModel();
+      $this->JabatanModel = new JabatanModel();
       $this->witelModel = new WitelModel();
       $this->userModel = new UserModel();
       $this->absensiModel = new AbsensiModel();
@@ -31,7 +31,7 @@ class Dashboard extends BaseController
       $data = [
          'linkdashboard' => 'active',
          'title' => 'Dashboard',
-         'jabatan' => $this->jabatanModel->getJabatan(),
+         'jabatan' => $this->JabatanModel->getJabatan(),
          'witel' => $this->witelModel->getWitel(),
          'datauser' => $this->userModel->FilterIdUser($id_user),
          'absensi' => $this->absensiModel->getTeknisi($id_witel)
